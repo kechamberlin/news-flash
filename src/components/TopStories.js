@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Article from './Article';
 
 function TopStories() {
-  const [] = useState([]);
+  const [story, setStory] = useState([]);
 
   useEffect(() => {
     getStories();
@@ -15,7 +15,7 @@ function TopStories() {
     );
     const data = await response.json();
     console.log(data.articles);
-    // setState(data.articles);
+    setStory(data.articles);
   };
 
   return (
