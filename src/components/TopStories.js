@@ -9,18 +9,27 @@ function TopStories() {
   }, []);
 
   const getStories = async () => {
-    const API_KEY = '24c2c6eb3889484bbc95889c82c924b1';
+    const API_KEY = 'RT4G87zFK5XAmxjRnkqTtJyAD7Af42sZ';
     const response = await fetch(
-      `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`
+      `https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${API_KEY}`
     );
     const data = await response.json();
-    console.log(data.articles);
-    setStory(data.articles);
+    console.log(data.results);
+    setStory(data.results);
   };
 
   return (
     <div>
       <h1>Top Stories</h1>
+      {story.map(news => (
+        <Article
+          key={news.title}
+          title={news.title}
+          abstract={news.abstract}
+          image={news.multimedia[0].url}
+          url={news.url}
+        />
+      ))}
     </div>
   );
 }
