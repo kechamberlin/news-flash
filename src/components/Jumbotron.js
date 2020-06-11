@@ -1,8 +1,8 @@
 import React from 'react';
-import MainStory from "./MainStory";
-import MostPopular from "./MostPopular";
+import MainStory from './MainStory';
+import MostPopular from './MostPopular';
 
-function Jumbotron() {
+function MyJumbotron() {
   return (
     <div>
       <div>Jumbotron</div>
@@ -12,4 +12,4 @@ function Jumbotron() {
   );
 }
 
-export default Jumbotron;
+export default MyJumbotron;
