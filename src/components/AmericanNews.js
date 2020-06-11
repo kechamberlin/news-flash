@@ -1,14 +1,16 @@
 import React from 'react';
 import TopStories from "./TopStories";
-import StoryRow from './StoryRow';
+import Politics from "./Politics";
+import Opinion from "./Opinion";
 
 function AmericanNews() {
   return (
     <div>
       <div>American News</div>
       <TopStories />
-      <StoryRow />
-      <StoryRow />
+      <Politics />
+      <Opinion />
+      
     </div>
   );
 }
