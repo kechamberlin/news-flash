@@ -21,15 +21,26 @@ function TopStories() {
   return (
     <div>
       <h1>Top Stories</h1>
-      {story.map(news => (
-        <Article
-          key={news.title}
-          title={news.title}
-          abstract={news.abstract}
-          image={news.multimedia[0].url}
-          url={news.url}
-        />
-      ))}
+      {/* 
+        THIS GRABS JUST THE 1 IMAGE I WANT
+            ...getStories...
+                ...console.log(data.results[0].multimedia[0].url);
+                ...setStory(data.results[0].multimedia[0].url);
+            ...
+            <Article image={story} />
+    */}
+
+      {/* 
+      THIS MAPS ALL THE STORIES AS ORIGINALLY SEEN
+        {story.map(news => (
+            <Article
+            key={news.title}
+            title={news.title}
+            abstract={news.abstract}
+            image={news.multimedia[0].url}
+            url={news.url}
+            />
+      ))} */}
     </div>
   );
 }
