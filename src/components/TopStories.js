@@ -21,6 +21,16 @@ function TopStories() {
   return (
     <div>
       <h1>Top Stories</h1>
+
+      {story.slice(0, 5).map((news, index) => (
+        <Article
+          key={index}
+          title={news.title}
+          abstract={news.abstract}
+          image={news.multimedia[0].url}
+        />
+      ))}
+
       {/* 
         THIS GRABS JUST THE 1 IMAGE I WANT
             ...getStories...
@@ -31,16 +41,29 @@ function TopStories() {
     */}
 
       {/* 
-      THIS MAPS ALL THE STORIES AS ORIGINALLY SEEN
-        {story.map(news => (
-            <Article
-            key={news.title}
-            title={news.title}
-            abstract={news.abstract}
-            image={news.multimedia[0].url}
-            url={news.url}
-            />
-      ))} */}
+        THIS SLICES THE ARRAY TO DISPLAY INDICES 0-5
+            {story.slice(0,5).map((news, index) => (
+                <Article
+                    key={index}
+                    title={news.title}
+                    abstract={news.abstract}
+                    image={news.multimedia[0].url}
+                />
+            ))}
+    */}
+
+      {/* 
+        THIS MAPS ALL THE STORIES AS ORIGINALLY SEEN
+            {story.map(news => (
+                <Article
+                key={news.title}
+                title={news.title}
+                abstract={news.abstract}
+                image={news.multimedia[0].url}
+                url={news.url}
+                />
+            ))} 
+      */}
     </div>
   );
 }
