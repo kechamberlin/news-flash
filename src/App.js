@@ -7,8 +7,7 @@ import AmericanNews from './components/AmericanNews';
 import World from './components/World';
 import Business from './components/Business';
 import SciTech from './components/SciTech';
-
-import TopStories from './components/TopStories';
+// import TopStories from './components/TopStories';
 import Footer from './components/Footer';
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
       <World />
       <Business />
       <SciTech />
-      <TopStories />
+      {/* <TopStories /> */}
       <Footer />
     </div>
   );
