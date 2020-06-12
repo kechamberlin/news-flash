@@ -3,7 +3,7 @@ import StoryRow from './StoryRow';
 
 function Opinion() {
   return (
-    <div>
+    <div style={{ backgroundColor: 'yellow' }}>
       <div>Opinion</div>
       <StoryRow />
     </div>

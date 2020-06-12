@@ -2,7 +2,7 @@ import React from 'react'
 
 function Business() {
     return (
-        <div>
+        <div style={{ backgroundColor: 'blue' }}>
             <div>Business News</div>
         </div>
     )

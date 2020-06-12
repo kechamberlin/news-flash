@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 
 function MyNavbar() {
   return (
-    <div>
+    <div style={{ backgroundColor: 'red' }}>
       <Nav
         activeKey='/home'
         onSelect={selectedKey => alert(`selected ${selectedKey}`)}

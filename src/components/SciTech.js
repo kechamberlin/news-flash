@@ -2,7 +2,7 @@ import React from 'react';
 
 function SciTech() {
   return (
-    <div>
+    <div style={{ backgroundColor: 'purple' }}>
       <div>Science {'&'} Tech</div>
     </div>
   );

@@ -19,7 +19,7 @@ function World() {
   };
 
   return (
-    <div>
+    <div style={{ backgroundColor: 'green' }}>
       <div>World News</div>
       {story.slice(0, 5).map((news, index) => (
         <TopStories

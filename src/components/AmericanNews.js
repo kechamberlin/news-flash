@@ -21,7 +21,7 @@ function AmericanNews() {
   };
 
   return (
-    <div>
+    <div style={{ backgroundColor: 'pink' }}>
       <div>American News</div>
       {story.slice(0, 5).map((news, index) => (
         <TopStories
