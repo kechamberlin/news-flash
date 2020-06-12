@@ -1,69 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import Article from './Article';
+import React from 'react';
 
-function TopStories() {
-  const [story, setStory] = useState([]);
-
-  useEffect(() => {
-    getStories();
-  }, []);
-
-  const getStories = async () => {
-    const API_KEY = 'RT4G87zFK5XAmxjRnkqTtJyAD7Af42sZ';
-    const response = await fetch(
-      `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${API_KEY}`
-    );
-    const data = await response.json();
-    console.log(data.results);
-    setStory(data.results);
-  };
-
+function TopStories({ title, abstract, image, url }) {
   return (
     <div>
-      <h1>Top Stories</h1>
-
-      {story.slice(0, 5).map((news, index) => (
-        <Article
-          key={index}
-          title={news.title}
-          abstract={news.abstract}
-          image={news.multimedia[0].url}
+      <h4>{title}</h4>
+      <a href={url} target='_blank'>
+        <img
+          src={image}
+          alt='something'
+          style={{ height: '15rem', width: '25rem' }}
         />
-      ))}
-
-      {/* 
-        THIS GRABS JUST THE 1 IMAGE I WANT
-            ...getStories...
-                ...console.log(data.results[0].multimedia[0].url);
-                ...setStory(data.results[0].multimedia[0].url);
-            ...
-            <Article image={story} />
-    */}
-
-      {/* 
-        THIS SLICES THE ARRAY TO DISPLAY INDICES 0-5
-            {story.slice(0,5).map((news, index) => (
-                <Article
-                    key={index}
-                    title={news.title}
-                    abstract={news.abstract}
-                    image={news.multimedia[0].url}
-                />
-            ))}
-    */}
-
-      {/* 
-        THIS MAPS ALL THE STORIES AS ORIGINALLY SEEN
-            {story.map(news => (
-                <Article
-                key={news.title}
-                title={news.title}
-                abstract={news.abstract}
-                image={news.multimedia[0].url}
-                url={news.url}
-                />
-            ))} 
-      */}
+      </a>
+      <p>{abstract}</p>
     </div>
   );
 }
