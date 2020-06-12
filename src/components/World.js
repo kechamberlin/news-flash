@@ -1,9 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import TopStories from './TopStories';
 
 function World() {
+  const [story, setStory] = useState([]);
+
+  useEffect(() => {
+    getStories();
+  }, []);
+
+  const getStories = async () => {
+    const API_KEY = 'RT4G87zFK5XAmxjRnkqTtJyAD7Af42sZ';
+    const response = await fetch(
+      `https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${API_KEY}`
+    );
+    const data = await response.json();
+    console.log(data.results);
+    setStory(data.results);
+  };
+
   return (
     <div>
       <div>World News</div>
+      {story.slice(0, 5).map((news, index) => (
+        <TopStories
+          key={index}
+          title={news.title}
+          abstract={news.abstract}
+          image={news.multimedia[0].url}
+        />
+      ))}
     </div>
   );
 }
