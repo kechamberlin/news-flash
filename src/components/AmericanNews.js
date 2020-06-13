@@ -21,9 +21,9 @@ function AmericanNews() {
   };
 
   return (
-    <div style={{ backgroundColor: 'pink' }}>
+    <div id='american-news' style={{ backgroundColor: 'pink' }}>
       <div>American News</div>
-      {story.slice(0, 5).map((news, index) => (
+      {story.slice(0, 6).map((news, index) => (
         <TopStories
           key={index}
           title={news.title}

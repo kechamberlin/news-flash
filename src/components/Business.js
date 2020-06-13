@@ -19,7 +19,7 @@ function Business() {
   };
 
   return (
-    <div style={{ backgroundColor: 'blue' }}>
+    <div id='business' style={{ backgroundColor: 'blue' }}>
       <div>Business News</div>
       {story.slice(0, 5).map((news, index) => (
         <TopStories

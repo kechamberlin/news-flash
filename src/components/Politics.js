@@ -19,7 +19,7 @@ function Politics() {
   };
 
   return (
-    <div style={{ backgroundColor: 'orange' }}>
+    <div id='politics' style={{ backgroundColor: 'orange' }}>
       <div>Politics</div>
       {story.slice(0, 8).map(news => (
         <StoryRow

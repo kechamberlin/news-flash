@@ -20,7 +20,7 @@ function SciTech() {
   };
 
   return (
-    <div style={{ backgroundColor: 'purple' }}>
+    <div id='sci-tech' style={{ backgroundColor: 'purple' }}>
       <div>Science {'&'} Tech</div>
       {story.slice(0, 5).map((news, index) => (
         <TopStories
