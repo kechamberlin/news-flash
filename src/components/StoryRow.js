@@ -1,17 +1,15 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
+import Figure from 'react-bootstrap/Figure';
 
-function StoryRow({ image, title }) {
+function StoryRow({ image, title, caption }) {
   return (
     <div>
-      {/* <img style={{ height: '5rem', width: '5rem' }} src={image} alt='' />
-      <p>{title}</p> */}
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant='top' src={image} />
-        <Card.Body>
-          <Card.Title>{title}</Card.Title>
-        </Card.Body>
-      </Card>
+      <Figure className='text-center' style={{ width: '15rem' }}>
+        <Figure.Image width={171} height={180} alt={caption} src={image} />
+        <Figure.Caption as='h1'>
+          <strong>{title}</strong>
+        </Figure.Caption>
+      </Figure>
     </div>
   );
 }
