@@ -22,7 +22,11 @@ function Politics() {
     <div style={{ backgroundColor: 'orange' }}>
       <div>Politics</div>
       {story.slice(0, 8).map(news => (
-        <StoryRow key={news.title} image={news.multimedia[0].url} title={news.title} />
+        <StoryRow
+          key={news.title}
+          image={news.multimedia[0].url}
+          title={news.title}
+        />
       ))}
     </div>
   );
