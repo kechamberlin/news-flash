@@ -22,15 +22,21 @@ function Technology() {
   };
 
   return (
-    <div style={{ backgroundColor: 'violet' }}>
+    <div style={{ backgroundColor: 'whitesmoke' }}>
       <div>Technology</div>
-      {story.slice(0, 8).map(news => (
-        <StoryRow
-          key={news.title}
-          image={news.multimedia[0].url}
-          title={news.title}
-        />
-      ))}
+      <Container>
+        <Row>
+          <Col className='my-grid-6'>
+            {story.slice(0, 6).map(news => (
+              <StoryRow
+                key={news.title}
+                image={news.multimedia[0].url}
+                title={news.title}
+              />
+            ))}
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
