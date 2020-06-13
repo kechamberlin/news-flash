@@ -22,15 +22,22 @@ function Opinion() {
   };
 
   return (
-    <div style={{ backgroundColor: 'yellow' }}>
+    <div id='opinion' style={{ backgroundColor: 'whitesmoke' }}>
       <div>Opinion</div>
-      {story.slice(0, 8).map(news => (
-        <OpinionStoryRow
-          key={news.title}
-          title={news.title}
-          byline={news.byline}
-        />
-      ))}
+
+      <Container>
+        <Row>
+          <Col className='my-grid-6'>
+            {story.slice(0, 6).map(news => (
+              <OpinionStoryRow
+                key={news.title}
+                title={news.title}
+                byline={news.byline}
+              />
+            ))}
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
