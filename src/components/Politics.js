@@ -32,6 +32,7 @@ function Politics() {
                 key={news.title}
                 image={news.multimedia[0].url}
                 title={news.title}
+                caption={news.multimedia[0].caption}
               />
             ))}
           </Col>
