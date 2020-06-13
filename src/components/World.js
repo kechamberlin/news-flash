@@ -22,16 +22,22 @@ function World() {
   };
 
   return (
-    <div id='world' style={{ backgroundColor: 'green' }}>
+    <div id='world' style={{ backgroundColor: 'whitesmoke' }}>
       <div>World News</div>
-      {story.slice(0, 5).map((news, index) => (
-        <TopStories
-          key={index}
-          title={news.title}
-          abstract={news.abstract}
-          image={news.multimedia[0].url}
-        />
-      ))}
+      <Container>
+        <Row>
+          <Col className='my-grid-3'>
+            {story.slice(0, 6).map((news, index) => (
+              <TopStories
+                key={index}
+                title={news.title}
+                abstract={news.abstract}
+                image={news.multimedia[0].url}
+              />
+            ))}
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

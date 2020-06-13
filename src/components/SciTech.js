@@ -23,16 +23,23 @@ function SciTech() {
   };
 
   return (
-    <div id='sci-tech' style={{ backgroundColor: 'purple' }}>
+    <div id='sci-tech' style={{ backgroundColor: 'whitesmoke' }}>
       <div>Science {'&'} Tech</div>
-      {story.slice(0, 5).map((news, index) => (
-        <TopStories
-          key={index}
-          title={news.title}
-          abstract={news.abstract}
-          image={news.multimedia[0].url}
-        />
-      ))}
+      <Container>
+        <Row>
+          <Col className='my-grid-3'>
+            {story.slice(0, 6).map((news, index) => (
+              <TopStories
+                key={index}
+                title={news.title}
+                abstract={news.abstract}
+                image={news.multimedia[0].url}
+              />
+            ))}
+          </Col>
+        </Row>
+      </Container>
+
       <Technology />
     </div>
   );
