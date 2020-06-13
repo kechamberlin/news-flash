@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import TopStories from './TopStories';
 import Politics from './Politics';
 import Opinion from './Opinion';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function AmericanNews() {
   const [story, setStory] = useState([]);
@@ -21,16 +24,23 @@ function AmericanNews() {
   };
 
   return (
-    <div id='american-news' style={{ backgroundColor: 'pink' }}>
+    <div id='american-news' style={{ backgroundColor: 'whitesmoke' }}>
       <div>American News</div>
-      {story.slice(0, 6).map((news, index) => (
-        <TopStories
-          key={index}
-          title={news.title}
-          abstract={news.abstract}
-          image={news.multimedia[0].url}
-        />
-      ))}
+      <Container>
+        <Row>
+          <Col className='my-grid-3'>
+            {story.slice(0, 6).map((news, index) => (
+              <TopStories
+                key={index}
+                title={news.title}
+                abstract={news.abstract}
+                image={news.multimedia[0].url}
+              />
+            ))}
+          </Col>
+        </Row>
+      </Container>
+
       <Politics />
       <Opinion />
     </div>
