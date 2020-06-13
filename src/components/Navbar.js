@@ -1,39 +1,81 @@
 import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 function MyNavbar() {
+  function scrollToTop() {
+    scroll.scrollToTop();
+  }
+
   return (
-    <div style={{ backgroundColor: 'red' }}>
-      <Nav
-        activeKey='/home'
-        onSelect={selectedKey => alert(`selected ${selectedKey}`)}
-      >
-        <Nav.Item>
-          <Nav.Link eventKey='link-1'>Link</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey='link-2'>Link</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey='link-3'>Link</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey='link-4'>Link</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey='link-5'>Link</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey='link-6'>Link</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey='link-7'>Link</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey='link-8'>Link</Nav.Link>
-        </Nav.Item>
-      </Nav>
-    </div>
+    <Navbar bg='light' expand='lg' sticky='top'>
+      <Navbar.Brand onClick={scrollToTop}>NewsFlash</Navbar.Brand>
+      <Navbar.Toggle aria-controls='basic-navbar-nav' />
+      <Navbar.Collapse id='basic-navbar-nav'>
+        <Nav className='mr-auto nav-links'>
+          <Link
+            // className='nav-links'
+            activeClass='active'
+            to='american-news'
+            spy={true}
+            smooth={true}
+            offset={-130}
+            duration={500}
+          >
+            U.S.
+          </Link>
+
+          <Link
+            // className='nav-links'
+            activeClass='active'
+            to='world'
+            spy={true}
+            smooth={true}
+            offset={-130}
+            duration={500}
+          >
+            World
+          </Link>
+
+          <Link
+            // className='nav-links'
+            activeClass='active'
+            to='politics'
+            spy={true}
+            smooth={true}
+            offset={-130}
+            duration={500}
+          >
+            Politics
+          </Link>
+
+          <Link
+            // className='nav-links'
+            activeClass='active'
+            to='business'
+            spy={true}
+            smooth={true}
+            offset={-130}
+            duration={500}
+          >
+            Business
+          </Link>
+
+          <Link
+            // className='nav-links'
+            activeClass='active'
+            to='sci-tech'
+            spy={true}
+            smooth={true}
+            offset={-130}
+            duration={500}
+          >
+            Science {'&'} Tech
+          </Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
