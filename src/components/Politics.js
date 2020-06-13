@@ -33,6 +33,7 @@ function Politics() {
                 image={news.multimedia[0].url}
                 title={news.title}
                 caption={news.multimedia[0].caption}
+                url={news.url}
               />
             ))}
           </Col>
