@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import StoryRow from './StoryRow';
+import OpinionStoryRow from './OpinionStoryRow';
 
 function Opinion() {
   const [story, setStory] = useState([]);
@@ -22,10 +22,10 @@ function Opinion() {
     <div style={{ backgroundColor: 'yellow' }}>
       <div>Opinion</div>
       {story.slice(0, 8).map(news => (
-        <StoryRow
+        <OpinionStoryRow
           key={news.title}
-          image={news.multimedia[0].url}
           title={news.title}
+          byline={news.byline}
         />
       ))}
     </div>
