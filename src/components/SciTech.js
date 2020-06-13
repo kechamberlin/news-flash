@@ -34,6 +34,7 @@ function SciTech() {
                 title={news.title}
                 abstract={news.abstract}
                 image={news.multimedia[0].url}
+                url={news.url}
               />
             ))}
           </Col>
