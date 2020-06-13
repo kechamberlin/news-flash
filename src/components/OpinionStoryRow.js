@@ -1,19 +1,21 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
+import Figure from 'react-bootstrap/Figure';
 
-function StoryRow({ title, byline }) {
+function OpinionStoryRow({ title, byline, url }) {
   return (
     <div>
-      <Card className='text-center' style={{ width: '18rem' }}>
-        <Card.Body>
-          <Card.Subtitle className='mb-2 text-muted'>
+      <a href={url} target='_blank' rel='noopener noreferrer'>
+        <Figure className='text-center' style={{ width: '18rem' }}>
+          <Figure.Caption as='h1'>
+            <strong>{title}</strong>
+          </Figure.Caption>
+          <Figure.Caption className='mb-2' style={{ fontSize: '12px' }}>
             {byline.substring(3)}
-          </Card.Subtitle>
-          <Card.Text>{title}</Card.Text>
-        </Card.Body>
-      </Card>
+          </Figure.Caption>
+        </Figure>
+      </a>
     </div>
   );
 }
 
-export default StoryRow;
+export default OpinionStoryRow;
