@@ -3,6 +3,13 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
+
+.my-grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1rem;
+}
+
 /* 
 @media (max-width: 500px) {
   .my-grid-3 {
