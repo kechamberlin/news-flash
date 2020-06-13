@@ -22,7 +22,7 @@ function Politics() {
   };
 
   return (
-    <div id='politics' style={{ backgroundColor: 'orange' }}>
+    <div id='politics' style={{ backgroundColor: 'whitesmoke' }}>
       <div>Politics</div>
       <Container>
         <Row>
