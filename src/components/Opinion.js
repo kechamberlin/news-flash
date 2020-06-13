@@ -33,6 +33,7 @@ function Opinion() {
                 key={news.title}
                 title={news.title}
                 byline={news.byline}
+                url={news.url}
               />
             ))}
           </Col>
