@@ -73,6 +73,18 @@ function MyNavbar() {
           >
             Science {'&'} Tech
           </Link>
+
+          <Link
+            // className='nav-links'
+            activeClass='active'
+            to='opinion'
+            spy={true}
+            smooth={true}
+            offset={-130}
+            duration={500}
+          >
+            Opinion
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
