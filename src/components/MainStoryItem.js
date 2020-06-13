@@ -1,9 +1,11 @@
 import React from 'react';
 
-function MainStoryItem() {
+function MainStoryItem({ image, title, abstract }) {
   return (
     <div>
-      <div>MainStoryItem</div>
+      <img src={image} alt='' style={{ height: '20rem', width: '40rem' }} />
+      <p>{title}</p>
+      <p>{abstract}</p>
     </div>
   );
 }
