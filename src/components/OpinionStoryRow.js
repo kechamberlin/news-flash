@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 function StoryRow({ title, byline }) {
   return (
     <div>
-      <Card style={{ width: '18rem' }}>
+      <Card className='text-center' style={{ width: '18rem' }}>
         <Card.Body>
           <Card.Subtitle className='mb-2 text-muted'>
             {byline.substring(3)}
