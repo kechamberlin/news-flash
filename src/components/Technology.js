@@ -32,6 +32,7 @@ function Technology() {
                 key={news.title}
                 image={news.multimedia[0].url}
                 title={news.title}
+                url={news.url}
               />
             ))}
           </Col>
