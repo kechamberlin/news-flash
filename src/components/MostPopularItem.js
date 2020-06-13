@@ -1,9 +1,9 @@
 import React from 'react';
 
-function MostPopularItem() {
+function MostPopularItem({ title }) {
   return (
     <div>
-      <div>MostPopularItem</div>
+      <p>{title}</p>
     </div>
   );
 }
