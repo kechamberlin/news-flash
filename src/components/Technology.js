@@ -18,11 +18,16 @@ function Technology() {
     setStory(data.results);
   };
 
-
   return (
     <div style={{ backgroundColor: 'violet' }}>
       <div>Technology</div>
-      <StoryRow />
+      {story.slice(0, 8).map(news => (
+        <StoryRow
+          key={news.title}
+          image={news.multimedia[0].url}
+          title={news.title}
+        />
+      ))}
     </div>
   );
 }
