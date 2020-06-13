@@ -1,17 +1,16 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
 
 function TopStories({ title, abstract, image, url }) {
   return (
     <div>
-      <h4>{title}</h4>
-      <a href={url} target='_blank'>
-        <img
-          src={image}
-          alt='something'
-          style={{ height: '15rem', width: '25rem' }}
-        />
-      </a>
-      <p>{abstract}</p>
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant='top' src={image} />
+        <Card.Body>
+          <Card.Title>{title}</Card.Title>
+          <Card.Text>{abstract}</Card.Text>
+        </Card.Body>
+      </Card>
     </div>
   );
 }
