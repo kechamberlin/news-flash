@@ -9,8 +9,14 @@ function MyNavbar() {
   }
 
   return (
-    <Navbar bg='light' expand='lg' sticky='top'>
-      <Navbar.Brand onClick={scrollToTop}>NewsFlash</Navbar.Brand>
+    <Navbar bg='danger' expand='lg' sticky='top'>
+      <Navbar.Brand
+        style={{ fontSize: '2rem', color: 'white' }}
+        className='project-logo'
+        onClick={scrollToTop}
+      >
+        NewsFlash
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='mr-auto nav-links'>
