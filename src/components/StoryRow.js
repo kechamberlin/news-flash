@@ -1,9 +1,10 @@
 import React from 'react';
 
-function StoryRow() {
+function StoryRow({ image, title }) {
   return (
     <div>
-      <div></div>
+      <img style={{ height: '5rem', width: '5rem' }} src={image} alt='' />
+      <p>{title}</p>
     </div>
   );
 }
