@@ -12,7 +12,7 @@ function MyNavbar() {
     <Navbar bg='danger' expand='lg' sticky='top'>
       <Navbar.Brand
         style={{ fontSize: '2rem', color: 'white' }}
-        className='project-logo'
+        className='project-logo pointer'
         onClick={scrollToTop}
       >
         NewsFlash
@@ -21,7 +21,7 @@ function MyNavbar() {
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='mr-auto nav-links'>
           <Link
-            // className='nav-links'
+            className='nav-links'
             activeClass='active'
             to='american-news'
             spy={true}
@@ -32,8 +32,10 @@ function MyNavbar() {
             U.S.
           </Link>
 
+          <div className='separator'>|</div>
+
           <Link
-            // className='nav-links'
+            className='nav-links'
             activeClass='active'
             to='world'
             spy={true}
@@ -44,8 +46,10 @@ function MyNavbar() {
             World
           </Link>
 
+          <div className='separator'>|</div>
+
           <Link
-            // className='nav-links'
+            className='nav-links'
             activeClass='active'
             to='politics'
             spy={true}
@@ -56,8 +60,10 @@ function MyNavbar() {
             Politics
           </Link>
 
+          <div className='separator'>|</div>
+
           <Link
-            // className='nav-links'
+            className='nav-links'
             activeClass='active'
             to='business'
             spy={true}
@@ -68,8 +74,10 @@ function MyNavbar() {
             Business
           </Link>
 
+          <div className='separator'>|</div>
+
           <Link
-            // className='nav-links'
+            className='nav-links'
             activeClass='active'
             to='sci-tech'
             spy={true}
@@ -80,8 +88,10 @@ function MyNavbar() {
             Science {'&'} Tech
           </Link>
 
+          <div className='separator'>|</div>
+
           <Link
-            // className='nav-links'
+            className='nav-links'
             activeClass='active'
             to='opinion'
             spy={true}
