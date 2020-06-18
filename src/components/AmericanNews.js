@@ -25,7 +25,7 @@ function AmericanNews() {
 
   return (
     <div id='american-news' style={{ backgroundColor: 'whitesmoke' }}>
-      <h1>American News</h1>
+      <h1 className='section-heading'>American News</h1>
       <Container>
         <Row>
           <Col className='my-grid-3'>
