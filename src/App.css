@@ -43,6 +43,10 @@
   margin: 0.7rem;
 }
 
+.separator:hover {
+  border-bottom: 2px solid transparent;
+}
+
 @media (max-width: 500px) {
   .my-grid-3 {
     grid-template-columns: 1fr;
