@@ -25,7 +25,7 @@ function AmericanNews() {
 
   return (
     <div id='american-news' style={{ backgroundColor: 'whitesmoke' }}>
-      <div>American News</div>
+      <h1>American News</h1>
       <Container>
         <Row>
           <Col className='my-grid-3'>
