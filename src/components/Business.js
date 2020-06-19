@@ -23,7 +23,7 @@ function Business() {
 
   return (
     <div id='business' style={{ backgroundColor: 'whitesmoke' }}>
-      <div>Business News</div>
+      <h1 className='section-heading'>Business News</h1>
       <Container>
         <Row>
           <Col className='my-grid-3'>

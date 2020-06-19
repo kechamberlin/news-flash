@@ -24,7 +24,7 @@ function SciTech() {
 
   return (
     <div id='sci-tech' style={{ backgroundColor: 'whitesmoke' }}>
-      <div>Science {'&'} Tech</div>
+      <h1 className='section-heading'>Science {'&'} Tech</h1>
       <Container>
         <Row>
           <Col className='my-grid-3'>

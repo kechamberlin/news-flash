@@ -23,7 +23,7 @@ function World() {
 
   return (
     <div id='world' style={{ backgroundColor: 'whitesmoke' }}>
-      <div>World News</div>
+      <h1 className='section-heading'>World News</h1>
       <Container>
         <Row>
           <Col className='my-grid-3'>
