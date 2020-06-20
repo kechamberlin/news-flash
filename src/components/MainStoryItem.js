@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
 
-function MainStoryItem({ image, title, abstract }) {
+function MainStoryItem({ image, title, abstract, url }) {
   return (
-    <div>
-      <Image src={image} fluid className='main-story-image' />
-      <h4>{title}</h4>
+    <div className='main-story'>
+      <Image src={image} fluid />
+      <h4 className='main-story-title'>{title}</h4>
       <p>{abstract}</p>
     </div>
   );
