@@ -1,12 +1,20 @@
 import React from 'react';
-import Image from 'react-bootstrap/Image';
+import Figure from 'react-bootstrap/Figure';
 
-function MainStoryItem({ image, title, abstract, url }) {
+function MainStoryItem({ image, title, abstract, url, caption }) {
   return (
     <div className='main-story'>
-      <Image src={image} fluid />
-      <h4 className='main-story-title'>{title}</h4>
-      <p>{abstract}</p>
+      <a href={url} target='_blank' rel='noopener noreferrer'>
+        <Figure>
+          <Figure.Image src={image} alt={caption} fluid />
+          <Figure.Caption bsPrefix className='main-story-title' as='h4'>
+            {title}
+          </Figure.Caption>
+          <Figure.Caption bsPrefix className='main-story-abstract'>
+            {abstract}
+          </Figure.Caption>
+        </Figure>
+      </a>
     </div>
   );
 }
