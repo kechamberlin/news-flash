@@ -8,7 +8,7 @@ function MainStoryItem({ image, title, abstract, url, caption }) {
         <Figure>
           <Figure.Image src={image} alt={caption} fluid />
           <Figure.Caption bsPrefix className='main-story-title' as='h4'>
-            {title}
+            <strong>{title}</strong>
           </Figure.Caption>
           <Figure.Caption bsPrefix className='main-story-abstract'>
             {abstract}
