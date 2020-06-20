@@ -10,10 +10,10 @@ function MyJumbotron() {
     <div>
         <Jumbotron>
           <Row>
-            <Col lg={8}>
+            <Col lg={7}>
               <MainStory />
             </Col>
-            <Col lg={4} >
+            <Col lg={5} >
               <MostPopular />
             </Col>
           </Row>
