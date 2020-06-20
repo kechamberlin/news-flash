@@ -26,7 +26,7 @@ function MyNavbar() {
             to='american-news'
             spy={true}
             smooth={true}
-            offset={-130}
+            offset={-79}
             duration={500}
           >
             U.S.
@@ -40,7 +40,7 @@ function MyNavbar() {
             to='world'
             spy={true}
             smooth={true}
-            offset={-130}
+            offset={-79}
             duration={500}
           >
             World
@@ -54,7 +54,7 @@ function MyNavbar() {
             to='politics'
             spy={true}
             smooth={true}
-            offset={-130}
+            offset={-79}
             duration={500}
           >
             Politics
@@ -68,7 +68,7 @@ function MyNavbar() {
             to='business'
             spy={true}
             smooth={true}
-            offset={-130}
+            offset={-79}
             duration={500}
           >
             Business
@@ -82,7 +82,7 @@ function MyNavbar() {
             to='sci-tech'
             spy={true}
             smooth={true}
-            offset={-130}
+            offset={-79}
             duration={500}
           >
             Science {'&'} Tech
@@ -96,7 +96,7 @@ function MyNavbar() {
             to='opinion'
             spy={true}
             smooth={true}
-            offset={-130}
+            offset={-79}
             duration={500}
           >
             Opinion
