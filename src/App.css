@@ -51,7 +51,14 @@
 ~~~~~~ Jumbotron ~~~~~
 ====================== */
 
+.main-story:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
 
+.main-story-title:hover {
+  text-decoration: underline;
+}
 
 /* =======================
 ~~~~~~ Main Sections ~~~~~
