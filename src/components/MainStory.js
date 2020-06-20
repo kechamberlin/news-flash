@@ -26,6 +26,7 @@ function MainStory() {
           image={news.multimedia[0].url}
           title={news.title}
           abstract={news.abstract}
+          url={news.url}
         />
       ))}
     </div>
