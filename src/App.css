@@ -56,8 +56,17 @@
   cursor: pointer;
 }
 
+.main-story-title {
+  color: black;
+}
+
 .main-story-title:hover {
   text-decoration: underline;
+}
+
+.main-story-abstract {
+  color: black;
+  font-size: 1rem;
 }
 
 /* =======================
