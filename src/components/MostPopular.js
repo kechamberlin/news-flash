@@ -20,7 +20,7 @@ function MostPopular() {
 
   return (
     <div>
-      <h3>Most Viewed</h3>
+      <h3>Trending Topics</h3>
       <ol>
         {story.slice(0, 10).map(news => (
           <li key={news.id}>
