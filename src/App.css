@@ -20,6 +20,7 @@
 
 .project-logo {
   font-family: 'Faster One', cursive;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .pointer {
@@ -33,6 +34,7 @@
   color: white;
   border-bottom: 2px solid transparent;
   cursor: pointer;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .nav-links > :hover {
@@ -67,6 +69,13 @@
 .main-story-abstract {
   color: black;
   font-size: 1rem;
+}
+
+.trending {
+  /* margin: 1rem;
+  padding: 0.2rem;
+  border-bottom: 1px solid black */
+  font-family: 'Publico Headline', serif;
 }
 
 /* =======================
