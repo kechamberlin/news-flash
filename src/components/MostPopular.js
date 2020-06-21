@@ -20,10 +20,14 @@ function MostPopular() {
 
   return (
     <div>
-      <p>Trending Today</p>
-      {story.slice(0, 10).map(news => (
-        <MostPopularItem key={news.id} title={news.title} />
-      ))}
+      <h3>Most Viewed</h3>
+      <ol>
+        {story.slice(0, 10).map(news => (
+          <li key={news.id}>
+            <MostPopularItem key={news.id} title={news.title} url={news.url} />
+          </li>
+        ))}
+      </ol>
     </div>
   );
 }
