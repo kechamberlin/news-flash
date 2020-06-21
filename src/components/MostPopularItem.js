@@ -1,9 +1,17 @@
 import React from 'react';
+import Figure from 'react-bootstrap/Figure';
 
-function MostPopularItem({ title }) {
+function MostPopularItem({ title, url }) {
   return (
-    <div>
-      <p>{title}</p>
+    <div className='trending'>
+      <a href={url} target='_blank' rel='noopener noreferrer'>
+        {/* <p>{title}</p> */}
+        <Figure>
+          <Figure.Caption bsPrefix>
+            {title}
+          </Figure.Caption>
+        </Figure>
+      </a>
     </div>
   );
 }
