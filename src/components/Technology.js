@@ -26,7 +26,7 @@ function Technology() {
       <div>Technology</div>
       <Container>
         <Row>
-          <Col className='my-grid-6'>
+          <Col className='my-grid-3'>
             {story.slice(0, 6).map(news => (
               <StoryRow
                 key={news.title}
