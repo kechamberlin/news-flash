@@ -105,7 +105,7 @@ ol li::before {
 }
 
 .trending-title:hover {
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 .trending-link {
@@ -130,6 +130,10 @@ ol li::before {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* ===========================
+~~~~~~ Responsive Deisgn ~~~~~
+=========================== */
 
 @media (max-width: 500px) {
   .my-grid-3 {
