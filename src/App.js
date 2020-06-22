@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Jumbotron from './components/Jumbotron';
 import AmericanNews from './components/AmericanNews';
 import World from './components/World';
+import Politics from './components/Politics';
 import Business from './components/Business';
 import SciTech from './components/SciTech';
 import Footer from './components/Footer';
@@ -16,6 +17,7 @@ function App() {
       <Jumbotron />
       <AmericanNews />
       <World />
+      <Politics />
       <Business />
       <SciTech />
       <Footer />
