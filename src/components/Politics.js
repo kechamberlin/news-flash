@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import StoryRow from './StoryRow';
+import TopStories from './TopStories';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -23,15 +23,16 @@ function Politics() {
 
   return (
     <div id='politics' style={{ backgroundColor: 'whitesmoke' }}>
-      <div>Politics</div>
+      <h1 className='section-heading'>Politics</h1>
       <Container>
         <Row>
-          <Col className='my-grid-6'>
+          <Col className='my-grid-3'>
             {story.slice(0, 6).map(news => (
-              <StoryRow
+              <TopStories
                 key={news.title}
-                image={news.multimedia[0].url}
                 title={news.title}
+                abstract={news.abstract}
+                image={news.multimedia[0].url}
                 caption={news.multimedia[0].caption}
                 url={news.url}
               />
