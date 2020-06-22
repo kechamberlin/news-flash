@@ -102,11 +102,25 @@ ol li::before {
   font-size: 1rem;
 }
 
-.trending {
-  /* margin: 1rem;
-  padding: 0.2rem;
-  border-bottom: 1px solid black */
+.trending-heading {
   font-family: 'Publico Headline', serif;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.trending-title:hover {
+  text-decoration: underline
+}
+
+.trending-link {
+  color: black;
+  font-weight: 700;
+}
+
+.trending-link:hover {
+  color: black;
 }
 
 /* =======================
