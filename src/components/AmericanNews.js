@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import TopStories from './TopStories';
-import Politics from './Politics';
 import Opinion from './Opinion';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -43,7 +42,6 @@ function AmericanNews() {
         </Row>
       </Container>
 
-      <Politics />
       <Opinion />
     </div>
   );
