@@ -2,6 +2,33 @@
 ~~~~ Global Styles ~~~~
 ==================== */
 
+ol {
+  list-style: none;
+  counter-reset: my-counter;
+  /* display: flex; */
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+ol li {
+  counter-increment: my-counter;
+  display: flex;
+  /* width: 50%; */
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+ol li::before {
+  content: '' counter(my-counter);
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 1rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+  color: firebrick;
+}
+
 /* ================
 ~~~~~~ Grids ~~~~~
 ================ */
