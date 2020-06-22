@@ -3,11 +3,11 @@ import Figure from 'react-bootstrap/Figure';
 
 function MostPopularItem({ title, url }) {
   return (
-    <div className='trending'>
+    <div>
       <a href={url} target='_blank' rel='noopener noreferrer' className='trending-link'>
         {/* <p>{title}</p> */}
         <Figure>
-          <Figure.Caption bsPrefix>
+          <Figure.Caption bsPrefix className='trending-title'>
             {title}
           </Figure.Caption>
         </Figure>
