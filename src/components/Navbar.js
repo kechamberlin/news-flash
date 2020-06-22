@@ -9,7 +9,7 @@ function MyNavbar() {
   }
 
   return (
-    <Navbar bg='danger' expand='lg' sticky='top'>
+    <Navbar style={{ backgroundColor: 'firebrick' }} expand='lg' sticky='top'>
       <Navbar.Brand
         style={{ fontSize: '2rem', color: 'white' }}
         className='project-logo pointer'
