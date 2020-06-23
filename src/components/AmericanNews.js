@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TopStories from './TopStories';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 function AmericanNews() {
   const [story, setStory] = useState([]);
@@ -25,20 +23,16 @@ function AmericanNews() {
     <div id='american-news' style={{ backgroundColor: 'whitesmoke' }}>
       <h1 className='section-heading'>US News</h1>
       <Container>
-        <Row>
-          <Col className='my-grid-3'>
-            {story.slice(0, 6).map((news, index) => (
-              <TopStories
-                key={index}
-                title={news.title}
-                abstract={news.abstract}
-                image={news.multimedia[0].url}
-                caption={news.multimedia[0].caption}
-                url={news.url}
-              />
-            ))}
-          </Col>
-        </Row>
+        {story.slice(0, 6).map((news, index) => (
+          <TopStories
+            key={index}
+            title={news.title}
+            abstract={news.abstract}
+            image={news.multimedia[0].url}
+            caption={news.multimedia[0].caption}
+            url={news.url}
+          />
+        ))}
       </Container>
     </div>
   );
