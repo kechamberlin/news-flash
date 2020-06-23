@@ -5,12 +5,17 @@ import Media from 'react-bootstrap/Media';
 function TopStories({ title, abstract, image, caption, url }) {
   return (
     <div>
-      <a href={url} target='_blank' rel='noopener noreferrer'>
+      <a
+        href={url}
+        target='_blank'
+        rel='noopener noreferrer'
+        className='article-link'
+      >
         <Media className='article'>
           <img
             width={250}
             height={150}
-            className='mr-3'
+            className='mr-4 article-image'
             src={image}
             alt={caption}
           />
