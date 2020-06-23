@@ -131,6 +131,17 @@ ol li::before {
   -webkit-text-fill-color: transparent;
 }
 
+/* ================
+~~~~~~ Footer ~~~~~
+================ */
+
+.footer {
+  padding: 2rem;
+  border-top: 0.5rem solid firebrick;
+  background-color: #4c4c4c;
+  color: whitesmoke;
+}
+
 /* ===========================
 ~~~~~~ Responsive Deisgn ~~~~~
 =========================== */
