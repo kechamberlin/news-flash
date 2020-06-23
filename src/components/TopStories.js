@@ -15,8 +15,8 @@ function TopStories({ title, abstract, image, caption, url }) {
             alt={caption}
           />
           <Media.Body>
-            <h5>{title}</h5>
-            <p>{abstract}</p>
+            <h5 className='article-title'>{title}</h5>
+            <p className='article-abstract'>{abstract}</p>
           </Media.Body>
         </Media>
 
