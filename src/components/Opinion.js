@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import OpinionStoryRow from './OpinionStoryRow';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function Opinion() {
@@ -26,9 +25,8 @@ function Opinion() {
       <div>Opinion</div>
 
       <Container>
-        <Row>
           <Col>
-            {story.slice(0, 6).map(news => (
+            {story.map(news => (
               <OpinionStoryRow
                 key={news.title}
                 title={news.title}
@@ -37,7 +35,6 @@ function Opinion() {
               />
             ))}
           </Col>
-        </Row>
       </Container>
     </div>
   );
