@@ -21,20 +21,20 @@ function Opinion() {
   };
 
   return (
-    <div id='opinion' style={{ backgroundColor: 'whitesmoke' }}>
-      <div>Opinion</div>
+    <div id='opinion' className='opinion'>
+      <h3 className='opinion-heading'>Opinion</h3>
 
       <Container>
-          <Col>
-            {story.map(news => (
-              <OpinionStoryRow
-                key={news.title}
-                title={news.title}
-                byline={news.byline}
-                url={news.url}
-              />
-            ))}
-          </Col>
+        <Col>
+          {story.map(news => (
+            <OpinionStoryRow
+              key={news.title}
+              title={news.title}
+              byline={news.byline}
+              url={news.url}
+            />
+          ))}
+        </Col>
       </Container>
     </div>
   );
