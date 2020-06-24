@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import TopStories from './TopStories';
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Opinion from './Opinion';
 
 function AmericanNews() {
   const [story, setStory] = useState([]);
@@ -23,16 +26,23 @@ function AmericanNews() {
     <div id='american-news' style={{ backgroundColor: 'whitesmoke' }}>
       <h1 className='section-heading'>US News</h1>
       <Container>
-        {story.slice(0, 6).map((news, index) => (
-          <TopStories
-            key={index}
-            title={news.title}
-            abstract={news.abstract}
-            image={news.multimedia[0].url}
-            caption={news.multimedia[0].caption}
-            url={news.url}
-          />
-        ))}
+        <Row>
+          <Col lg={8}>
+            {story.map((news, index) => (
+              <TopStories
+                key={index}
+                title={news.title}
+                abstract={news.abstract}
+                image={news.multimedia[0].url}
+                caption={news.multimedia[0].caption}
+                url={news.url}
+              />
+            ))}
+          </Col>
+          <Col lg={4}>
+            <Opinion />
+          </Col>
+        </Row>
       </Container>
     </div>
   );
