@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import Jumbotron from './components/Jumbotron';
 import AmericanNews from './components/AmericanNews';
-import Opinion from './components/Opinion';
 import World from './components/World';
 import Politics from './components/Politics';
 import Business from './components/Business';
@@ -17,7 +16,6 @@ function App() {
       <Navbar />
       <Jumbotron />
       <AmericanNews />
-      <Opinion />
       <World />
       <Politics />
       <Business />
