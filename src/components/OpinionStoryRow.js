@@ -5,7 +5,7 @@ function OpinionStoryRow({ title, byline, url }) {
   return (
     <div>
       <a href={url} target='_blank' rel='noopener noreferrer'>
-        <Figure style={{ width: '18rem' }}>
+        <Figure>
           <Figure.Caption as='h1'>
             <strong>{title}</strong>
           </Figure.Caption>
