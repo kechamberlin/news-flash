@@ -27,7 +27,7 @@ function Opinion() {
 
       <Container>
         <Row>
-          <Col className='my-grid-3'>
+          <Col>
             {story.slice(0, 6).map(news => (
               <OpinionStoryRow
                 key={news.title}
