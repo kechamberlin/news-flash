@@ -173,7 +173,7 @@ ol li::before {
 }
 
 .opinion-title:hover {
-  text-decoration: underline;
+  color: #121212;
 }
 
 .opinion-abstract {
