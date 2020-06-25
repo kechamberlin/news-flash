@@ -27,7 +27,7 @@ function World() {
       <Container>
         <Row>
           <Col className='my-grid-3'>
-            {story.slice(0, 6).map((news, index) => (
+            {story.map((news, index) => (
               <TopStories
                 key={index}
                 title={news.title}

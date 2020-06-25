@@ -27,7 +27,7 @@ function Technology() {
       <Container>
         <Row>
           <Col className='my-grid-3'>
-            {story.slice(0, 6).map(news => (
+            {story.map(news => (
               <StoryRow
                 key={news.title}
                 image={news.multimedia[0].url}

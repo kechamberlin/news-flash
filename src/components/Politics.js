@@ -27,7 +27,7 @@ function Politics() {
       <Container>
         <Row>
           <Col className='my-grid-3'>
-            {story.slice(0, 6).map(news => (
+            {story.map(news => (
               <TopStories
                 key={news.title}
                 title={news.title}
