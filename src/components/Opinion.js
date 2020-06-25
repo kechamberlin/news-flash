@@ -21,7 +21,7 @@ function Opinion() {
   };
 
   return (
-    <div id='opinion' className='opinion'>
+    <div id='opinion'>
       <h3 className='opinion-heading'>Opinion</h3>
 
       <Container>
