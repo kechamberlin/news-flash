@@ -3,13 +3,13 @@ import Figure from 'react-bootstrap/Figure';
 
 function OpinionStoryRow({ title, byline, url }) {
   return (
-    <div>
+    <div className='opinion'>
       <a href={url} target='_blank' rel='noopener noreferrer'>
         <Figure>
-          <Figure.Caption as='h1'>
+          <Figure.Caption className='opinion-title'>
             <strong>{title}</strong>
           </Figure.Caption>
-          <Figure.Caption className='mb-2' style={{ fontSize: '12px' }}>
+          <Figure.Caption className='opinion-abstract'>
             {byline.substring(3)}
           </Figure.Caption>
         </Figure>
