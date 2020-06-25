@@ -65,6 +65,20 @@ function MyNavbar() {
           <Link
             className='nav-links'
             activeClass='active'
+            to='health'
+            spy={true}
+            smooth={true}
+            offset={-79}
+            duration={500}
+          >
+            Health
+          </Link>
+
+          <div className='separator'>|</div>
+
+          <Link
+            className='nav-links'
+            activeClass='active'
             to='business'
             spy={true}
             smooth={true}
