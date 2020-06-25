@@ -137,7 +137,7 @@ ol li::before {
 }
 
 .article-title:hover {
-  text-decoration: underline black;
+  color: dodgerblue;
 }
 
 .article-abstract {
