@@ -26,7 +26,7 @@ function World() {
       <h1 className='section-heading'>World News</h1>
       <Container>
         <Row>
-          <Col className='my-grid-3'>
+          <Col lg={9}>
             {story.map((news, index) => (
               <TopStories
                 key={index}

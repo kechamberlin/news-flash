@@ -26,7 +26,7 @@ function Business() {
       <h1 className='section-heading'>Business News</h1>
       <Container>
         <Row>
-          <Col className='my-grid-3'>
+          <Col lg={8}>
             {story.map((news, index) => (
               <TopStories
                 key={index}

@@ -26,7 +26,7 @@ function Health() {
       <h1 className='section-heading'>Health</h1>
       <Container>
         <Row>
-          <Col lg={8}>
+          <Col lg={9}>
             {story.map((news, index) => (
               <TopStories
                 key={index}

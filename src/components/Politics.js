@@ -26,7 +26,7 @@ function Politics() {
       <h1 className='section-heading'>Politics</h1>
       <Container>
         <Row>
-          <Col className='my-grid-3'>
+          <Col lg={9}>
             {story.map(news => (
               <TopStories
                 key={news.title}
