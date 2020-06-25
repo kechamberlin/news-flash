@@ -117,7 +117,7 @@ ol li::before {
   font-weight: bold;
   font-size: 2.7rem;
   padding: 1rem;
-  background: linear-gradient(to bottom, white, black);
+  background: linear-gradient(to top, silver, black);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -141,11 +141,41 @@ ol li::before {
 
 .article-abstract {
   color: black;
-  font-size: 0.9rem
+  font-size: 0.9rem;
 }
 
 .article-link {
   text-decoration: none !important;
+}
+
+.opinion {
+  border-style: ridge;
+  border-color: silver;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.opinion-heading {
+  font-family: 'Publico Headline', serif;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(to top, silver, black);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.opinion-title {
+  margin-bottom: 0.7rem;
+  font-weight: 900;
+}
+
+.opinion-title:hover {
+  text-decoration: underline;
+}
+
+.opinion-abstract {
+  
 }
 
 /* ================
