@@ -26,7 +26,7 @@ function Technology() {
       <div>Technology</div>
       <Container>
         <Row>
-          <Col className='my-grid-3'>
+          <Col>
             {story.map(news => (
               <StoryRow
                 key={news.title}
