@@ -27,7 +27,7 @@ function SciTech() {
       <h1 className='section-heading'>Science {'&'} Tech</h1>
       <Container>
         <Row>
-          <Col>
+          <Col lg={8}>
             {story.map((news, index) => (
               <TopStories
                 key={index}
@@ -38,10 +38,11 @@ function SciTech() {
               />
             ))}
           </Col>
+          <Col lg={4}>
+            <Technology />
+          </Col>
         </Row>
       </Container>
-
-      <Technology />
     </div>
   );
 }
