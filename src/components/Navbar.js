@@ -93,7 +93,7 @@ function MyNavbar() {
           <Link
             className='nav-links'
             activeClass='active'
-            to='sci-tech'
+            to='science'
             spy={true}
             smooth={true}
             offset={-79}
