@@ -27,10 +27,9 @@ function Technology() {
       <Container>
         <Row>
           <Col>
-            {story.map(news => (
-              <StoryRow
-                key={news.title}
-                image={news.multimedia[0].url}
+          {story.slice(0, 10).map((news, index) => (
+              <TopStories
+                key={index}
                 title={news.title}
                 url={news.url}
               />
