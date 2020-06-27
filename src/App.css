@@ -2,6 +2,10 @@
 ~~~~ Global Styles ~~~~
 ==================== */
 
+.content-body {
+  background-color: whitesmoke;
+}
+
 ol {
   list-style: none;
   counter-reset: my-counter;
