@@ -22,8 +22,8 @@ function Technology() {
   };
 
   return (
-    <div style={{ backgroundColor: 'whitesmoke' }}>
-      <div>Technology</div>
+    <div id='technology' className='content-body'>
+      <h1 className='section-heading'>Technology</h1>
       <Container>
         <Row>
           <Col>
