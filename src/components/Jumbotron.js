@@ -8,16 +8,16 @@ import Col from 'react-bootstrap/Col';
 function MyJumbotron() {
   return (
     <div>
-        <Jumbotron>
-          <Row>
-            <Col lg={7}>
-              <MainStory />
-            </Col>
-            <Col lg={5} >
-              <MostPopular />
-            </Col>
-          </Row>
-        </Jumbotron>
+      <Jumbotron style={{ backgroundColor: 'white' }}>
+        <Row>
+          <Col lg={7}>
+            <MainStory />
+          </Col>
+          <Col lg={5}>
+            <MostPopular />
+          </Col>
+        </Row>
+      </Jumbotron>
     </div>
   );
 }
