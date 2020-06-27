@@ -24,7 +24,7 @@ function AmericanNews() {
 
   return (
     <div id='american-news' style={{ backgroundColor: 'whitesmoke' }}>
-      <h1 className='section-heading'>US News</h1>
+      <h1 className='section-heading'>United States</h1>
       <Container>
         <Row>
           <Col lg={8}>
