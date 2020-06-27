@@ -33,6 +33,7 @@ function World() {
                 title={news.title}
                 abstract={news.abstract}
                 image={news.multimedia[0].url}
+                caption={news.multimedia[0].caption}
                 url={news.url}
               />
             ))}
