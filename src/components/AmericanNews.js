@@ -28,7 +28,7 @@ function AmericanNews() {
       <Container>
         <Row>
           <Col lg={8}>
-            {story.map((news, index) => (
+            {story.slice(0, 10).map((news, index) => (
               <TopStories
                 key={index}
                 title={news.title}

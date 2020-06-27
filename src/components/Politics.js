@@ -27,7 +27,7 @@ function Politics() {
       <Container>
         <Row>
           <Col lg={9}>
-            {story.map(news => (
+            {story.slice(0, 10).map(news => (
               <TopStories
                 key={news.title}
                 title={news.title}

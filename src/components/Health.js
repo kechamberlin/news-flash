@@ -27,7 +27,7 @@ function Health() {
       <Container>
         <Row>
           <Col lg={9}>
-            {story.map((news, index) => (
+            {story.slice(0, 10).map((news, index) => (
               <TopStories
                 key={index}
                 title={news.title}
