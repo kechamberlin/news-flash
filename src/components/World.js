@@ -22,7 +22,7 @@ function World() {
   };
 
   return (
-    <div id='world' style={{ backgroundColor: 'whitesmoke' }}>
+    <div id='world' className='content-body'>
       <h1 className='section-heading'>World News</h1>
       <Container>
         <Row>
