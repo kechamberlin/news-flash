@@ -61,7 +61,8 @@ ol li::before {
 }
 
 .separator {
-  margin: 0.7rem;
+  margin: auto;
+  padding: 0 0.4rem 0 0.4rem;
 }
 
 .separator:hover {
