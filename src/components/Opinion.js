@@ -26,7 +26,7 @@ function Opinion() {
 
       <Container>
         <Col>
-          {story.map(news => (
+          {story.slice(0, 14).map(news => (
             <OpinionStoryRow
               key={news.title}
               title={news.title}
