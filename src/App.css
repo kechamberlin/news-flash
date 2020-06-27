@@ -231,8 +231,8 @@ ol li::before {
 
 @media (min-width: 768px) {
   .article-image {
-    width: 9rem;
-    height: 7rem;
+    width: 14rem;
+    height: 10rem;
   }
 
   .article-title {
