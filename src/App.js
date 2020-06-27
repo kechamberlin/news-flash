@@ -22,7 +22,8 @@ function App() {
       <Politics />
       <Health />
       <Business />
-      <SciTech />
+      <Science />
+      <Technology />
       <Footer />
     </div>
   );
