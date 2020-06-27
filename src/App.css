@@ -212,7 +212,39 @@ ol li::before {
   .article-abstract {
     display: none;
   }
+}
 
+@media (min-width: 426px) {
+  .article-image {
+    width: 9rem;
+    height: 7rem;
+  }
+
+  .article-title {
+    font-size: 1em;
+  }
+
+  .article-abstract {
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 768px) {
+  .article-image {
+    width: 9rem;
+    height: 7rem;
+  }
+
+  .article-title {
+    font-size: 1.2rem;
+  }
+
+  .article-abstract {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
   .section-heading {
     text-align: center;
   }
