@@ -8,7 +8,8 @@ import World from './components/World';
 import Politics from './components/Politics';
 import Health from './components/Health';
 import Business from './components/Business';
-import SciTech from './components/SciTech';
+import Science from './components/Science';
+import Technology from './components/Technology';
 import Footer from './components/Footer';
 
 function App() {
