@@ -199,6 +199,11 @@ ol li::before {
 /* ===========================
 ~~~~~~ Responsive Deisgn ~~~~~
 =========================== */
+@media (max-width: 425px) {
+  .article-image {
+    width: 7rem;
+    height: 5rem;
+  }
 
 @media (max-width: 500px) {
   .my-grid-3 {
