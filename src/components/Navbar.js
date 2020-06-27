@@ -99,7 +99,21 @@ function MyNavbar() {
             offset={-79}
             duration={500}
           >
-            Science {'&'} Tech
+            Science
+          </Link>
+
+          <div className='separator'>|</div>
+
+          <Link
+            className='nav-links'
+            activeClass='active'
+            to='technology'
+            spy={true}
+            smooth={true}
+            offset={-79}
+            duration={500}
+          >
+            Tech
           </Link>
 
           <div className='separator'>|</div>
