@@ -205,9 +205,8 @@ ol li::before {
     height: 5rem;
   }
 
-@media (max-width: 500px) {
-  .my-grid-3 {
-    grid-template-columns: 1fr;
+  .article-title {
+    font-size: 0.9em;
   }
 
   .separator {
