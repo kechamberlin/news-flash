@@ -22,7 +22,7 @@ function Business() {
   };
 
   return (
-    <div id='business' style={{ backgroundColor: 'whitesmoke' }}>
+    <div id='business' className='content-body'>
       <h1 className='section-heading'>Business News</h1>
       <Container>
         <Row>

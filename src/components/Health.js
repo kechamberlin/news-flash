@@ -22,7 +22,7 @@ function Health() {
   };
 
   return (
-    <div id='health' style={{ backgroundColor: 'whitesmoke' }}>
+    <div id='health' className='content-body'>
       <h1 className='section-heading'>Health</h1>
       <Container>
         <Row>

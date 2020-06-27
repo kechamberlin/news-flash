@@ -23,7 +23,7 @@ function AmericanNews() {
   };
 
   return (
-    <div id='american-news' style={{ backgroundColor: 'whitesmoke' }}>
+    <div id='american-news' className='content-body'>
       <h1 className='section-heading'>United States</h1>
       <Container>
         <Row>

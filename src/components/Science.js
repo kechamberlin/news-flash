@@ -22,7 +22,7 @@ function Science() {
   };
 
   return (
-    <div id='science' style={{ backgroundColor: 'whitesmoke' }}>
+    <div id='science' className='content-body'>
       <h1 className='section-heading'>Science</h1>
       <Container>
         <Row>

@@ -22,7 +22,7 @@ function Politics() {
   };
 
   return (
-    <div id='politics' style={{ backgroundColor: 'whitesmoke' }}>
+    <div id='politics' className='content-body'>
       <h1 className='section-heading'>Politics</h1>
       <Container>
         <Row>
