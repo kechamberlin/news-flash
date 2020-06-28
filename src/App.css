@@ -218,6 +218,18 @@ ol li::before {
   .article-abstract {
     display: none;
   }
+
+  .content-body {
+    background-color: whitesmoke;
+  }
+
+  ol {
+    display: block;
+  }
+
+  ol li {
+    width: 100%;
+  }
 }
 
 @media (min-width: 426px) {
