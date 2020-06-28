@@ -254,4 +254,8 @@ ol li::before {
   .separator {
     display: none;
   }
+
+  .trending-title {
+    font-size: 0.9rem;
+  }
 }
