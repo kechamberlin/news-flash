@@ -5,7 +5,6 @@ function MostPopularItem({ title, url }) {
   return (
     <div>
       <a href={url} target='_blank' rel='noopener noreferrer' className='trending-link'>
-        {/* <p>{title}</p> */}
         <Figure>
           <Figure.Caption bsPrefix className='trending-title'>
             {title}
