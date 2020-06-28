@@ -212,6 +212,7 @@ ol li::before {
 
   .article-title {
     font-size: 0.9em;
+    padding-top: 5px;
   }
 
   .article-abstract {
