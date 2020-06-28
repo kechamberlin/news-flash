@@ -200,6 +200,11 @@ ol li::before {
 ~~~~~~ Responsive Deisgn ~~~~~
 =========================== */
 @media (max-width: 425px) {
+  .article {
+    background-color: white;
+    margin: 1rem 0 1rem 0;
+  }
+
   .article-image {
     width: 7rem;
     height: 5rem;
