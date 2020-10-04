@@ -22,18 +22,18 @@ function Technology() {
   };
 
   return (
-    <div id='technology' className='content-body'>
-      <h1 className='section-heading'>Technology</h1>
+    <div id="technology" className="content-body">
+      <h1 className="section-heading">Technology</h1>
       <Container>
         <Row>
           <Col>
-          {story.slice(0, 10).map((news, index) => (
+            {story.slice(0, 10).map((news, index) => (
               <TopStories
                 key={index}
                 title={news.title}
                 abstract={news.abstract}
-                image={news.multimedia[0].url}
-                caption={news.multimedia[0].caption}
+                image={news.multimedia.url}
+                caption={news.multimedia.caption}
                 url={news.url}
               />
             ))}
